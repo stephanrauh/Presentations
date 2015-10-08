@@ -108,6 +108,7 @@
                 <ul>
                   <li>Culture</li>
                   <li>Tools</li>
+				  <li>Process</li>
                 </ul>
                 <p>
             </section>
@@ -149,16 +150,7 @@
                 <p class="fragment">Establish meaningful tests and quality gates.</p>
                 <p class="fragment">You need a trustable delivery process.</p>
             </section>
-            <section>
-                <h3>Continuous Integration process</h3>
-
-                <p>CD starts where CI stops.</p>
-                <p>Jenkins is only the first step.</p>
-                <p>Thoughtworks Go:</p>
-                <img src="http://www.go.cd/images/home-image1.png" />
-                <p style="font-size:30px">Image source: http://www.go.cd/images/home-image1.png </p>
-            </section>
-
+  
         </section>
         <section>
           <section>
@@ -172,7 +164,7 @@
           <section>
               <h2>Automated, reliable tests</h2>
               <p>Green-field approach:</p>
-              <p>Alway test your software in a fresh environment.</p>
+              <p>Always test your software in a fresh environment.</p>
               <ul class="fragment">
                 <li>Create the runtime environment from scratch.</li>
                 <li>Install or compile your software</li>
@@ -202,7 +194,7 @@
           </section>
           <section>
               <h2>Update your OS in five minutes</h2>
-              <code class="fragment">vagrant stop</code><br />
+              <code class="fragment">vagrant halt</code><br />
               <code class="fragment">vagrant destroy</code><br />
               <p class="fragment">Edit the config file.</p>
               <code class="fragment">vagrant up</code>
@@ -213,7 +205,7 @@
               <p>Based on a script.</p>
               <div class="fragment">
               <p>Reinstall your installation in a minute:</p>
-              <code>vagrant stop</code>
+              <code>vagrant halt</code>
               <code>vagrant destroy</code>
               <p>Edit the config file.</p>
               <code>vagrant up</code>
@@ -228,12 +220,35 @@
           </section>
           <section>
               <h2>Orcas</h2>
-              <p>Database management tool</p>
+              <p>Manage your database versions</p>
+			  <p>Roughly comparable to Flyway and Liquibase</p>
+			  <div class="fragment">
+			  <p>Possible use for CD projects:</p>
               <p>Reset the database prior to testing</p>
+			  </div>
+			  <p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Process</h2>
           </section>
           <section>
-              <h2>Thoughtworks Go</h2>
-              <p>manages the delivery process</p>
+            <h2>Automatic deployment feels dangerous</h2>
+            <p>&rarr; Strong focus on quality and automated tests</p>
+			<p>&rarr;automated build, assembly and deployment</p>
+          </section>
+            <section>
+                <h3>Continuous Integration process</h3>
+
+                <p>CD starts where CI stops.</p>
+                <p>Jenkins is only the first step.</p>
+            </section>
+            <section>
+                <p>Thoughtworks Go:</p>
+                <p>manages the delivery process</p>
+                <img src="http://www.go.cd/images/home-image1.png" />
+                <p style="font-size:30px">Image source: http://www.go.cd/images/home-image1.png </p>
           </section>
         </section>
         <section>
