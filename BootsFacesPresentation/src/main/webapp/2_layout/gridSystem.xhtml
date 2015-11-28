@@ -7,11 +7,17 @@
   xmlns:ng="http://xmlns.jcp.org/jsf/passthrough"
   xmlns:ac="http://beyondjava.net/angularFacesCore">
 
+
+  <h1>Grid system explained</h1>
   <b:row>
-    <b:column col-xs="12">
-  		This is another fragment. It is called when the URL does not end with page1 or page2.
-      </b:column>
+    <b:column hidden="xs" col-xs="12">
+      <ul>
+        <li>Dividing the screen into twelve columns</li>
+      </ul>
+    </b:column>
+
   </b:row>
+
   <b:row>
     <b:column col-xs="6" />
     <b:column col-xs="1">
@@ -19,29 +25,26 @@
         <b:column col-xs="1" />
         <b:column col-xs="1">
           <b:button iconAwesome="chevron-up" fragment="#start"
-            look="primary" />
+            look="default" />
         </b:column>
       </b:row>
       <b:row>
         <b:column col-xs="1">
-          <b:button iconAwesome="chevron-left" look="default" />
+          <b:button iconAwesome="chevron-left" look="primary" fragment="#start" />
         </b:column>
         <b:column col-xs="1">
           <b:button iconAwesome="chevron-right"
-            fragment="#hidingColumns" look="default"
+             look="default"
             style="margin-left:30px" />
         </b:column>
       </b:row>
       <b:row>
         <b:column col-xs="1" />
         <b:column col-xs="1">
-          <b:button iconAwesome="chevron-down"
-            look="default" />
+          <b:button iconAwesome="chevron-down" fragment="#hidingColumns"  
+            look="primary" />
         </b:column>
       </b:row>
     </b:column>
   </b:row>
-
 </ui:fragment>
-
-

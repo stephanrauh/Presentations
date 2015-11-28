@@ -6,7 +6,7 @@ body  { padding-top: 75px;padding-bottom: 75px; }
 	width: 350px;
 }
 
-.col-xs-12 {
+.withBorder {
 	border: 1px solid black;
 	height: 50px;
 }
