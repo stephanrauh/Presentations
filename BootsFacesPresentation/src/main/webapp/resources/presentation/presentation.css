@@ -1,0 +1,45 @@
+body  { padding-top: 75px;padding-bottom: 75px; }
+
+.tooltip-inner {
+	max-width: 350px;
+	/* If max-width does not work, try using width instead */
+	width: 350px;
+}
+
+.col-xs-12 {
+	border: 1px solid black;
+	height: 50px;
+}
+
+.navbar-brand {
+  font-size:20pt;
+}
+h1 {
+  font-size:36pt;
+}
+
+h2 {
+  font-size:28pt;
+}
+
+h3 {
+  font-size:24pt;
+}
+
+h4 {
+  font-size:20pt;
+}
+
+p { 
+  font-size:20pt;
+}
+
+li { 
+  font-size:20pt;
+}
+body {
+  background-color:black;
+}
+.panel-title {
+  font-size:28pt;
+}

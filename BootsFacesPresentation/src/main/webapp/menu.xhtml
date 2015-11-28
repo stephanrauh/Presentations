@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:fragment xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:ui="http://java.sun.com/jsf/facelets"
+  xmlns:b="http://bootsfaces.net/ui">
+
+  <b:navBar brand="BootsFaces"
+    brandHref="#{request.contextPath}/index.jsf" inverse="true"
+    fixed="top">
+    <b:container>
+      <b:navbarLinks>
+        <b:navLink />
+        <b:navLink />
+        <b:dropMenu value="Getting Started">
+          <b:navLink value="Welcome!" outcome="#index" />
+        </b:dropMenu>
+
+        <b:dropMenu value="Grid System">
+          <b:navLink value="Basic Layout and Grid System"
+            outcome="#gridSystem" iconAwesome="table" />
+          <b:navLink value="Hiding Columns" outcome="#hidingColumns" />
+        </b:dropMenu>
+      </b:navbarLinks>
+    </b:container>
+  </b:navBar>
+
+</ui:fragment>

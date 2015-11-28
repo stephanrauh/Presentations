@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>BootsFaces: next-gen JSF Framework</title>
+        <meta name="author" content="Riccardo Massera"></meta>
+    </h:head>
+    <h:body style="padding-top: 60px">
+        <ui:composition template="/common/template.xhtml">
+            <ui:define name="content">
+          <script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+            
+       
+       
+ <h:form>
+        <b:row><b:column offset="2" col-lg="8">
+           <b:tabView>
+               <b:tab title="Test"></b:tab>
+               <b:tab title="Test with b">
+               <b:panel style="height: 400px">
+                   <p:gmap center="49.005268,2.113863" type="ROADMAP" zoom="14" style="width:300px;height:300px"/>
+               </b:panel>
+               </b:tab>
+            </b:tabView>
+        </b:column></b:row>
+
+        <b:row><b:column offset="2" col-lg="8">
+           <p:tabView activeIndex="0" style="height:500px; width:100%;">
+               <p:tab title="Test" ></p:tab>
+               <p:tab title="Test with p" >
+                    <p:gmap center="49.005268,2.113863" type="ROADMAP" zoom="14" style="width:300px;height:300px"/>
+               </p:tab>
+            </p:tabView>
+        </b:column></b:row>
+  </h:form>
+
+                
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>

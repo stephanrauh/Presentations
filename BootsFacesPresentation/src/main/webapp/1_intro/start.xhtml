@@ -1,0 +1,51 @@
+<ui:fragment xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+
+      <h1>AngularFaces and BootsFaces</h1>
+      <h2>Modern HTML5 for JSF programmers</h2>
+      <p style="height: 30px" />
+      <b:row>
+        <b:column col-md="6">
+          <b:panel title="BootsFaces" look="primary"
+            style="height:330px">
+            <ul>
+              <li>next-generation JSF framework</li>
+              <li>HTML5 at your finger tips</li>
+              <li>Bootstrap 3.3 made easy</li>
+              <li>Advanced AJAX</li>
+              <li>48 components and counting</li>
+              <li>Mobile first!</li>
+            </ul>
+
+          </b:panel>
+        </b:column>
+        <b:column col-md="6">
+          <b:panel title="AngularFaces" look="success"
+            style="height:330px">
+            <ul>
+              <li>AngularJS 1.3 meets JSF 2.2</li>
+              <li>rapid prototyping features</li>
+              <li>internationalization</li>
+              <li>simplified JSF markup</li>
+              <li>business logic to the client</li>
+            </ul>
+          </b:panel>
+        </b:column>
+      </b:row>
+      <b:row>
+        <b:column col-md="1" offset="4">
+          <b:button value="next" outcome="index.jsf" fragment="#hidingColumns" look="primary" />
+        </b:column>
+        <b:column col-md="1">
+
+          <button type="button" class="btn btn-primary"
+            href="#hidingColumn">next</button>
+        </b:column>
+      </b:row>
+
+</ui:fragment>

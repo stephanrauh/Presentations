@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<ui:fragment xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:b="http://bootsfaces.net/ui" 
+      xmlns:ui="http://java.sun.com/jsf/facelets" 
+      xmlns:ng="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:ac="http://beyondjava.net/angularFacesCore">
+
+
+     <h1>Hiding columns on small screens</h1>
+      <b:row>
+        <b:column hidden="xs" col-xs="12" col-sm="6" col-md="4"
+          col-lg="3">
+          <code>&lt;b:column hidden="xs" &gt;</code>
+        </b:column>
+        <b:column hidden="sm" col-xs="12" col-sm="6" col-md="4"
+          col-lg="3">
+          <code>&lt;b:column hidden="sm" &gt;</code>
+        </b:column>
+        <b:column hidden="md" col-xs="12" col-sm="6" col-md="4"
+          col-lg="3">
+          <code>&lt;b:column hidden="md" &gt;</code>
+        </b:column>
+        <b:column col-xs="12" col-sm="6" col-md="4" col-lg="3">
+          <code>&lt;b:column &gt;</code>
+        </b:column>
+      </b:row>
+      <b:row style="border:1px solid black">
+        <b:column hidden="xs" col-xs="12" col-sm="6" col-md="4"
+          col-lg="3">
+                Hidden on tiny screens and below.
+                </b:column>
+        <b:column hidden="sm" col-xs="12" col-sm="6" col-md="4"
+          col-lg="3">
+                Hidden on small screens and below.
+                </b:column>
+        <b:column hidden="md" col-xs="12" col-sm="6" col-md="4"
+          col-lg="3">
+                Hidden on medium screens and below.
+                </b:column>
+        <b:column col-xs="12" col-sm="6" col-md="4" col-lg="3">
+                Never hidden.
+                </b:column>
+      </b:row>
+      <h1>Hiding columns on large screens</h1>
+      <b:row style="border:1px solid black">
+        <b:column col-xs="12" col-sm="6" col-md="4" col-lg="3">
+          <code>&lt;b:column &gt;</code>
+        </b:column>
+        <b:column visible="sm" col-xs="12" col-sm="6" col-md="4"
+          col-lg="3">
+          <code>&lt;b:column visible="sm" &gt;</code>
+        </b:column>
+        <b:column visible="md" col-xs="12" col-sm="6" col-md="4"
+          col-lg="3">
+          <code>&lt;b:column visible="md" &gt;</code>
+        </b:column>
+        <b:column visible="lg" col-xs="12" col-sm="6" col-md="4"
+          col-lg="3">
+          <code>&lt;b:column visible="lg" &gt;</code>
+        </b:column>
+      </b:row>
+      <b:row style="border:1px solid black">
+        <b:column col-xs="12" col-sm="6" col-md="4" col-lg="3">
+                Always visible.
+                </b:column>
+        <b:column visible="sm" col-xs="12" col-sm="6" col-md="4"
+          col-lg="3">
+                Visible on small screens and above.
+                </b:column>
+        <b:column visible="md" col-xs="12" col-sm="6" col-md="4"
+          col-lg="3">
+                Visible on medium screens and above.
+                </b:column>
+        <b:column visible="lg" col-xs="12" col-sm="6" col-md="4"
+          col-lg="3">
+                Visible on large screen only.
+                </b:column>
+      </b:row>
+</ui:fragment>

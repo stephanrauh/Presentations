@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:f="http://java.sun.com/jsf/core"
+  xmlns:b="http://bootsfaces.net/ui"
+  xmlns:ui="http://java.sun.com/jsf/facelets"
+  xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+  <h:head>
+    <ui:include src="header.xhtml" />
+    <ui:include src="syntaxhighlighter.xhtml" />
+  </h:head>
+  <h:body>
+    <h:outputScript library="AngularJS" name="angular-route.js"></h:outputScript>
+    <script src="controllers.js"></script>
+    <script src="navigation.js"></script>
+  
+    <ui:insert name="nbtop">
+      <ui:include src="menu.xhtml" />
+    </ui:insert>
+    
+    <b:panel rendered="false" />
+  
+    <b:container ng-app="navigationApp">
+      <div ng-view=""></div>
+    </b:container>
+  
+    <ui:insert name="nbtop">
+      <ui:include src="/footer.xhtml" />
+    </ui:insert>
+  </h:body>
+</html>
