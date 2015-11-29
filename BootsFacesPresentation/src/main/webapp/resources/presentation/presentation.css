@@ -1,6 +1,7 @@
 body {
-	padding-top: 75px;
 	padding-bottom: 75px;
+	padding-top:110px;
+	font-size:20pt !important;
 }
 
 .tooltip-inner {
@@ -11,35 +12,39 @@ body {
 
 .withBorder {
 	border: 1px solid black;
-	height: 50px;
+	height: 100px;
 }
 
 .navbar-brand {
-	font-size: 20pt;
+	font-size: 28pt !important;
 }
 
 h1 {
-	font-size: 36pt;
+	font-size: 40pt !important;
 }
 
 h2 {
-	font-size: 28pt;
+	font-size: 36pt !important;
 }
 
 h3 {
-	font-size: 24pt;
+	font-size: 30pt !important;
 }
 
 h4 {
-	font-size: 20pt;
+	font-size: 28pt !important;
+}
+
+h5 {
+	font-size: 24pt !important;
 }
 
 p {
-	font-size: 20pt;
+	font-size: 28pt;
 }
 
 li {
-	font-size: 20pt;
+	font-size: 28pt;
 }
 
 body {
