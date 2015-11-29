@@ -1,4 +1,7 @@
-body  { padding-top: 75px;padding-bottom: 75px; }
+body {
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
 
 .tooltip-inner {
 	max-width: 350px;
@@ -12,34 +15,160 @@ body  { padding-top: 75px;padding-bottom: 75px; }
 }
 
 .navbar-brand {
-  font-size:20pt;
+	font-size: 20pt;
 }
+
 h1 {
-  font-size:36pt;
+	font-size: 36pt;
 }
 
 h2 {
-  font-size:28pt;
+	font-size: 28pt;
 }
 
 h3 {
-  font-size:24pt;
+	font-size: 24pt;
 }
 
 h4 {
-  font-size:20pt;
+	font-size: 20pt;
 }
 
-p { 
-  font-size:20pt;
+p {
+	font-size: 20pt;
 }
 
-li { 
-  font-size:20pt;
+li {
+	font-size: 20pt;
 }
+
 body {
-  background-color:black;
+	background-color: black;
 }
+
 .panel-title {
-  font-size:28pt;
+	font-size: 28pt;
+}
+
+// Controls from reveal.js
+
+ .controls {
+	display: none;
+	position: fixed;
+	width: 110px;
+	height: 110px;
+	z-index: 30;
+	right: 10px;
+	bottom: 10px;
+}
+
+ .controls div {
+	position: absolute;
+	opacity: 0.05;
+	width: 0;
+	height: 0;
+	border: 12px solid transparent;
+	-moz-transform: scale(.9999);
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+ .controls div.enabled {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+ .controls div.enabled:active {
+	margin-top: 1px;
+}
+
+ .controls div.navigate-left {
+	top: 42px;
+	border-right-width: 22px;
+	border-right-color: #eee;
+}
+
+ .controls div.navigate-left.fragmented {
+	opacity: 0.3;
+}
+
+ .controls div.navigate-right {
+	left: 74px;
+	top: 42px;
+	border-left-width: 22px;
+	border-left-color: #eee;
+}
+
+ .controls div.navigate-right.fragmented {
+	opacity: 0.3;
+}
+
+ .controls div.navigate-up {
+	left: 42px;
+	border-bottom-width: 22px;
+	border-bottom-color: #eee;
+}
+
+ .controls div.navigate-up.fragmented {
+	opacity: 0.3;
+}
+
+ .controls div.navigate-down {
+	left: 42px;
+	top: 74px;
+	border-top-width: 22px;
+	border-top-color: #eee;
+}
+
+ .controls div.navigate-down.fragmented {
+	opacity: 0.3;
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+ .controls div.navigate-left,
+ .controls div.navigate-left.enabled {
+    border-right-color: #2f3a75;
+}
+
+ .controls div.navigate-right,
+ .controls div.navigate-right.enabled {
+    border-left-color: #2f3a75;
+}
+
+ .controls div.navigate-up,
+ .controls div.navigate-up.enabled {
+    border-bottom-color: #2f3a75;
+}
+
+ .controls div.navigate-down,
+ .controls div.navigate-down.enabled {
+    border-top-color: #2f3a75;
+}
+
+ .controls div.navigate-left.enabled:hover {
+    border-right-color: #2f3a75;
+}
+
+ .controls div.navigate-right.enabled:hover {
+    border-left-color: #2f3a75;
+}
+
+ .controls div.navigate-up.enabled:hover {
+    border-bottom-color: #2f3a75;
+}
+
+ .controls div.navigate-down.enabled:hover {
+    border-top-color: #2f3a75;
+}
+
+aside {
+	display: block;
+	position:absolute;
+	right:120px;
+	bottom:160px;
 }
