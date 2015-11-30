@@ -13,6 +13,10 @@ navigationApp.config([ '$routeProvider', function($routeProvider) {
 	}).when('/start', {
 		templateUrl : '1_intro/start.jsf',
 		controller : 'EmptyController'
+	}).when('/dogFood', {
+		templateUrl : '1_intro/dogFood.jsf',
+	}).when('/funFacts', {
+		templateUrl : '1_intro/funFacts.jsf',
 	}).when('/keyFeaturesBF', {
 		templateUrl : '1_intro/keyFeaturesBF.jsf',
 	}).when('/keyFeaturesAF', {
@@ -22,6 +26,10 @@ navigationApp.config([ '$routeProvider', function($routeProvider) {
 		controller : 'EmptyController'
 	}).when('/angularJS', {
 		templateUrl : '10_angularJS/angularJS.jsf',
+	}).when('/ngComponents', {
+		templateUrl : '10_angularJS/ngComponents.jsf',
+	}).when('/ngTable', {
+		templateUrl : '10_angularJS/ngTable.jsf',
 	}).otherwise({
 		templateUrl : '99_miscellaneous/other.jsf',
 	});
@@ -35,30 +43,42 @@ navigationApp.directive('navigator', function() {
 
 			var msg = '<aside class="controls">';
 			msg += '<div id="navigate-left" class="navigate-left';
-			if ($element['left']) {
+			var left = $element['left'];
+			if (left) {
+				if (left.substring(0,1)!="#")
+					left = "#" + left;
 				msg += ' enabled" onclick="window.location.href=\''
-						+ $element['left'] + '\'";';
+						+ left + '\'";';
 			} else
 				msg += '"';
 			msg += '></div>';
 			msg += '<div id="navigate-right" class="navigate-right';
-			if ($element['right']) {
+			var right = $element['right'];
+			if (right) {
+				if (right.substring(0,1)!="#")
+					right = "#" + right;
 				msg += ' enabled" onclick="window.location.href=\''
-						+ $element['right'] + '\'";';
+						+ right + '\'";';
 			} else
 				msg += '"';
 			msg += '></div>';
 			msg += '<div id="navigate-up" class="navigate-up';
-			if ($element['up']) {
+			var up = $element['up'];
+			if (up) {
+				if (up.substring(0,1)!="#")
+					up = "#" + up;
 				msg += ' enabled" onclick="window.location.href=\''
-						+ $element['up'] + '\'";';
+						+ up + '\'";';
 			} else
 				msg += '"';
 			msg += '></div>';
 			msg += '<div id="navigate-down" class="navigate-down';
-			if ($element['down']) {
+			var down = $element['down'];
+			if (down) {
+				if (down.substring(0,1)!="#")
+					down = "#" + down;
 				msg += ' enabled" onclick="window.location.href=\''
-						+ $element['down'] + '\'";';
+						+ down + '\'";';
 			} else
 				msg += '"';
 			msg += '></div>';
