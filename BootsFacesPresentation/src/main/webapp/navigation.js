@@ -30,6 +30,14 @@ navigationApp.config([ '$routeProvider', function($routeProvider) {
 		templateUrl : '10_angularJS/ngComponents.jsf',
 	}).when('/ngTable', {
 		templateUrl : '10_angularJS/ngTable.jsf',
+	}).when('/integration', {
+		templateUrl : '20_integration/integration.jsf',
+	}).when('/roadmapBF', {
+		templateUrl : '30_roadmap/roadmapBF.jsf',
+	}).when('/roadmapAF', {
+		templateUrl : '30_roadmap/roadmapAF.jsf',
+	}).when('/questions', {
+		templateUrl : '90_questions/questions.jsf',
 	}).otherwise({
 		templateUrl : '99_miscellaneous/other.jsf',
 	});

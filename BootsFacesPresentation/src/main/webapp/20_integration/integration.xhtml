@@ -6,14 +6,33 @@
   xmlns:p="http://primefaces.org/ui">
 
 
-  <header title="Compatbility Matrix" />
+  <header title="Compatibility Matrix" />
   <b:row>
-    <b:column col-md="12">
+    <b:column col-md="6">
+      <b:panel title="BootsFaces" look="primary">
         <ul>
-          <li>PrimeFaces</li>
+          <li>Java 6+</li>
+          <li>JSF 2.0+<br /> (both MyFaces and Mojarra)</li>
+          <li>PrimeFaces 5+</li>
+          <li>OmniFaces 1.11/2.x</li>
+          <li><s>Richfaces</s></li>
+          <li><s>ICEFaces</s></li>
         </ul>
+        </b:panel>
+    </b:column>
+   <b:column col-md="6">
+      <b:panel title="AngularFaces" look="success">
+        <ul>
+          <li>Java 6+</li>
+          <li>JSF 2.2+<br /> (both MyFaces and Mojarra)</li>
+          <li>PrimeFaces 5+</li>
+          <li>OmniFaces 1.11/2.x</li>
+          <li><s>Richfaces</s></li>
+          <li><s>ICEFaces</s></li>
+        </ul>
+        </b:panel>
     </b:column>
   </b:row>
   
-   <navigator up="#keyFeaturesAF" down="ngComponents"/>
+   <navigator up="#keyFeaturesAF" down="ngComponents" left="keyFeaturesAF" right="roadmapBF"/>
 </ui:fragment>
