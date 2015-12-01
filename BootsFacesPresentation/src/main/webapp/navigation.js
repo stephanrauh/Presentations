@@ -33,6 +33,14 @@ navigationApp.config([ '$routeProvider', function($routeProvider) {
 	}).when('/gridSystemStackSourcecode', {
 		templateUrl : '2_layout/gridSystemStackSourcecode.jsf',
 		controller : 'EmptyController'
+	}).when('/searchExpressions', {
+		templateUrl : '3_searchExpressions/searchExpressions.jsf',
+	}).when('/ajax', {
+		templateUrl : '4_ajax/ajax.jsf',
+	}).when('/components', {
+		templateUrl : '5_components/components.jsf',
+	}).when('/showcaseBF', {
+		templateUrl : '5_components/showcaseBF.jsf',
 	}).when('/angularJS', {
 		templateUrl : '10_angularJS/angularJS.jsf',
 	}).when('/ngComponents', {
