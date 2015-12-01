@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:f="http://java.sun.com/jsf/core"
+  xmlns:b="http://bootsfaces.net/ui"
+  xmlns:ui="http://java.sun.com/jsf/facelets"
+  xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+  <h:head>
+    <ui:include src="header.xhtml" />
+    <ui:include src="syntaxhighlighter.xhtml" />
+  </h:head>
+  <h:body>
+    <h:outputScript library="AngularJS" name="angular-route.js"></h:outputScript>
+    <script src="controllers.js"></script>
+    <script src="navigation.js"></script>
+    
+    <b:panel rendered="false" />
+    <b:carousel rendered="false" />
+    <b:tabView rendered="false" />
+    <b:tab rendered="false" />
+  
+    <b:container ng-app="navigationApp" rendered="#{loginBean.loggedIn}">
+      <div ng-view="">
+        <ui:include src="2_layout/gridSystem.xhtml" />
+      </div>
+    </b:container>
+  
+    <b:container ng-app="navigationApp" rendered="#{!loginBean.loggedIn}">
+        <h1>Please log in with a valid user name.</h1>
+    </b:container>
+  
+    <ui:insert name="nbtop">
+      <ui:include src="/footer.xhtml" />
+    </ui:insert>
+  </h:body>
+</html>

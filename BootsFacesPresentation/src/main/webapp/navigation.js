@@ -35,8 +35,8 @@ navigationApp.config([ '$routeProvider', function($routeProvider) {
 		controller : 'EmptyController'
 	}).when('/searchExpressions', {
 		templateUrl : '3_searchExpressions/searchExpressions.jsf',
-	}).when('/ajax', {
-		templateUrl : '4_ajax/ajax.jsf',
+	}).when('/ajaxBF', {
+		templateUrl : '4_ajax/ajaxBF.jsf',
 	}).when('/components', {
 		templateUrl : '5_components/components.jsf',
 	}).when('/showcaseBF', {
@@ -47,6 +47,16 @@ navigationApp.config([ '$routeProvider', function($routeProvider) {
 		templateUrl : '10_angularJS/ngComponents.jsf',
 	}).when('/ngTable', {
 		templateUrl : '10_angularJS/ngTable.jsf',
+	}).when('/ajaxAF', {
+		templateUrl : '11_angularFaces/ajaxAF.jsf',
+	}).when('/clientSideValidation', {
+		templateUrl : '11_angularFaces/clientSideValidation.jsf',
+	}).when('/i18n', {
+		templateUrl : '11_angularFaces/i18n.jsf',
+	}).when('/rapidPrototyping', {
+		templateUrl : '11_angularFaces/rapidPrototyping.jsf',
+	}).when('/relaxedMarkup', {
+		templateUrl : '11_angularFaces/relaxedMarkup.jsf',
 	}).when('/integration', {
 		templateUrl : '20_integration/integration.jsf',
 	}).when('/roadmapBF', {

@@ -1,20 +1,99 @@
 <!DOCTYPE html>
 <ui:fragment xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:b="http://bootsfaces.net/ui"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:ng="http://xmlns.jcp.org/jsf/passthrough"
-	xmlns:ac="http://beyondjava.net/angularFacesCore">
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:f="http://java.sun.com/jsf/core"
+  xmlns:b="http://bootsfaces.net/ui"
+  xmlns:ui="http://java.sun.com/jsf/facelets"
+  xmlns:ng="http://xmlns.jcp.org/jsf/passthrough"
+  xmlns:ac="http://beyondjava.net/angularFacesCore">
 
 
-	<header title="48 Components ... and Counting!" />
-	<b:row>
-		<b:column col-xs="12">
-		</b:column>
-	</b:row>
-	
-	<navigator up="ajax" down="showcaseBF" />
+  <header title="48 Components ... and Counting!" />
+  <b:row>
+    <b:column col-xs="12">
+      <h:form>
+        <b:carousel id="wizard" styleClass="wizardPseudoClass"
+          style="width:800px;height:580px;padding-top:20px"
+          startAnimation="true" showIndicators="true">
+          <b:carouselItem style="width:100%;height:100%">
+            <b:panel title="b:panel" look="primary">
+              <b:inputText label="b:inputText" renderLabel="true" />
+              <b:inputSecret label="b:inputSecret" renderLabel="true" />
+              <b:inputTextarea placeholder="multi-line input" rows="4"
+                label="b:inputTextarea" renderLabel="true" />
+            </b:panel>
+          </b:carouselItem>
+          <b:carouselItem style="width:100%;height:100%">
+            <b:panel title="Components 2" look="danger  ">
+              <ul>
+                <li>b:selectBooleanCheckbox
+                    
+                </li>
+                <li><b:selectOneMenu label="b:selectOneMenu"
+                    renderLabel="true" /></li>
+                <li>b:selectMultiMenu</li>
+                <li>b:switch</li>
+                <li>b:datePicker</li>
+              </ul>
+            </b:panel>
+          </b:carouselItem>
+          <b:carouselItem style="width:100%;height:100%">
+            <b:panel title="Components 3" look="success">
+              <ul>
+                <li>b:carousel
+                </li>
+                <li>b:panel</li>
+                <li>b:panelGrid</li>
+                <li>b:container, b:row, b:column</li>
+                <li>Menus, NavBars and Sidebars</li>
+                <li>Tabs, carousels and wizards</li>
+              </ul>
+            </b:panel>
+          </b:carouselItem>
+         <b:carouselItem style="width:100%;height:100%">
+            <b:panel title="Components 4" look="success">
+              <ul>
+                <li>Buttons and CommandButtons
+                </li>
+                <li>Buttongroups and toolbars</li>
+                <li>Datatable (prototype)</li>
+                <li>b:poll</li>
+                <li>b:message and b:messages</li>
+                <li>b:slider</li>
+              </ul>
+            </b:panel>
+          </b:carouselItem>
+        <b:carouselItem style="width:100%;height:100%">
+            <b:panel title="Components 5" look="success">
+              <ul>
+                <li>Tooltips
+                </li>
+                <li>Thumbnails</li>
+                <li>Labels and Badges</li>
+                <li>Modal Dialogs</li>
+                <li>Tabs</li>
+                <li>Alerts</li>
+              </ul>
+            </b:panel>
+          </b:carouselItem>
+          <b:carouselControl direction="right">
+            <b:commandButton value="previous step" role="button"
+              onclick="$('.wizardPseudoClass').carousel('prev');$('.wizardPseudoClass').carousel('pause'); return false;"
+              look="info" />
+          </b:carouselControl>
+          <b:carouselControl direction="left">
+            <b:commandButton value="next step" role="button"
+              style="position:absolute;right:0px"
+              onclick="$('.wizardPseudoClass').carousel('next');$('.wizardPseudoClass').carousel('pause'); return false;"
+              look="success" />
+          </b:carouselControl>
+        </b:carousel>
+      </h:form>
+
+    </b:column>
+  </b:row>
+
+  <navigator up="ajaxBF" down="showcaseBF" />
 
 
 
