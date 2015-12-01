@@ -24,6 +24,15 @@ navigationApp.config([ '$routeProvider', function($routeProvider) {
 	}).when('/gridSystem', {
 		templateUrl : '2_layout/gridSystem.jsf',
 		controller : 'EmptyController'
+	}).when('/gridSystemSourcecode', {
+		templateUrl : '2_layout/gridSystemSourcecode.jsf',
+		controller : 'EmptyController'
+	}).when('/gridSystemStack', {
+		templateUrl : '2_layout/gridSystemStack.jsf',
+		controller : 'EmptyController'
+	}).when('/gridSystemStackSourcecode', {
+		templateUrl : '2_layout/gridSystemStackSourcecode.jsf',
+		controller : 'EmptyController'
 	}).when('/angularJS', {
 		templateUrl : '10_angularJS/angularJS.jsf',
 	}).when('/ngComponents', {
