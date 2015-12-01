@@ -35,6 +35,10 @@ navigationApp.config([ '$routeProvider', function($routeProvider) {
 		controller : 'EmptyController'
 	}).when('/searchExpressions', {
 		templateUrl : '3_searchExpressions/searchExpressions.jsf',
+	}).when('/searchExpressions2', {
+		templateUrl : '3_searchExpressions/searchExpressions2.jsf',
+	}).when('/searchExpressions3', {
+		templateUrl : '3_searchExpressions/searchExpressions3.jsf',
 	}).when('/ajaxBF', {
 		templateUrl : '4_ajax/ajaxBF.jsf',
 	}).when('/components', {

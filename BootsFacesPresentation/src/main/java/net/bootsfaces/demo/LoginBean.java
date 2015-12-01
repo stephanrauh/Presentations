@@ -14,7 +14,7 @@ public class LoginBean implements Serializable {
 
 	private boolean loggedIn = false;
 
-	private String username = "";
+	private String username = "BootsFaces";
 	private String password = "";
 
 	public boolean isLoggedIn() {
@@ -41,11 +41,13 @@ public class LoginBean implements Serializable {
 		this.password = password;
 	}
 
-	public void login() {
-		loggedIn=false;
+	public String login() {
+		loggedIn=true;
 		if ("BootsFaces".equalsIgnoreCase(username))
 			if ("rocks".equals(password)) {
 				loggedIn=true;
+			}
+		if (loggedIn) {
 				try {
 					FacesContext.getCurrentInstance().getExternalContext().redirect("index2.jsf");
 				} catch (IOException e) {
@@ -53,5 +55,6 @@ public class LoginBean implements Serializable {
 					e.printStackTrace();
 				}
 			}
+		return null;
 	}
 }

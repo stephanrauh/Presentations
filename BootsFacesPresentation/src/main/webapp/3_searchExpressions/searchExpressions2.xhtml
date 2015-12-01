@@ -11,22 +11,19 @@
   <header title="Search Expressions" />
   <b:row>
     <b:column col-xs="12">
-      <h2>Standard + PrimeFaces search expressions</h2>
+      <h2>BootsFaces search expressions</h2>
       <ul>
-        <li>@form</li>
-        <li>@this</li>
-        <li>@all</li>
-        <li>@none</li>
-        <li>@previous</li>
-        <li>@next</li>
-        <li>@parent</li>
-        <li>@() jquery expressions</li>
+        <li>@findIdRecursive(id) or **</li>
+        <li>@findId(id) or *:id</li>
+        <li>@findPartialId(id) or *id</li>
+        <li>@findPartialIdRecursive(id) or **:*id or **:id* or **:*id*</li>
+        <li>@child(n)</li>
       </ul>
 
     </b:column>
   </b:row>
 
-  <navigator up="hidingColumns" down="ajaxBF" right="searchExpressions2" />
+  <navigator up="hidingColumns" down="ajaxBF" left="searchExpressions" right="searchExpressions3"/>
 
 
 

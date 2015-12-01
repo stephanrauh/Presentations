@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<ui:fragment xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:ng="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:ac="http://beyondjava.net/angularFacesCore">
+
+
+	<header title="Search Expressions" />
+	<b:row>
+		<b:column col-xs="12">
+      
+        <h2>PrimeFaces search expressions BootsFaces does not support</h2>
+        <ul>
+          <li>@namingcontainer</li>
+          <li>@composite</li>
+          <li>@row(n)</li>
+          <li>@widgetVar(name) (doesn't make sense in BootsFaces)</li>
+        </ul>
+		</b:column>
+	</b:row>
+	
+	<navigator up="hidingColumns" down="ajaxBF" left="searchExpressions2" />
+
+
+
+</ui:fragment>
