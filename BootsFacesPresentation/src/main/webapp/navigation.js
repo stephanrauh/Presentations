@@ -69,6 +69,8 @@ navigationApp.config([ '$routeProvider', function($routeProvider) {
 		templateUrl : '30_roadmap/roadmapAF.jsf',
 	}).when('/questions', {
 		templateUrl : '90_questions/questions.jsf',
+	}).when('/contribution', {
+		templateUrl : '90_questions/contribution.jsf',
 	}).otherwise({
 		templateUrl : '99_miscellaneous/other.jsf',
 	});
