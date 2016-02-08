@@ -7,6 +7,8 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 
+import net.bootsfaces.utils.FacesMessages;
+
 @ManagedBean
 @SessionScoped
 public class LoginBean implements Serializable {
@@ -19,10 +21,6 @@ public class LoginBean implements Serializable {
 
 	public boolean isLoggedIn() {
 		return loggedIn;
-	}
-
-	private void setLoggedIn(boolean loggedIn) {
-		this.loggedIn = loggedIn;
 	}
 
 	public String getUsername() {
@@ -41,8 +39,7 @@ public class LoginBean implements Serializable {
 		this.password = password;
 	}
 
-	public String login() {
-		loggedIn=true;
+	public void login() {
 		if ("BootsFaces".equalsIgnoreCase(username))
 			if ("rocks".equals(password)) {
 				loggedIn=true;
@@ -55,6 +52,11 @@ public class LoginBean implements Serializable {
 					e.printStackTrace();
 				}
 			}
-		return null;
+		else
+			FacesMessages.error("This is not the correct username and password. Try again.");
+	}
+	
+	public void resetLogin() {
+		
 	}
 }

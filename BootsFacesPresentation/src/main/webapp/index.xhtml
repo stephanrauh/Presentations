@@ -21,17 +21,18 @@
   <b:tab rendered="false" />
 
 
-  <b:container ng-app="navigationApp">
+  <container ng-app="navigationApp">
     <h:form>
-      <b:panel title="Please log in" look="primary">
-        <b:panelGrid colSpans="3,3,6">
-          <b:inputText value="#{loginBean.username}" />
-          <b:inputSecret value="#{loginBean.password}" />
-        </b:panelGrid>
-        <b:commandButton value="login" action="#{loginBean.login}" />
-      </b:panel>
+      <panel title="Please log in" look="primary">
+        <panelGrid colSpans="3,3,6">
+          <inputText value="#{loginBean.username}" />
+          <inputSecret value="#{loginBean.password}" />
+        </panelGrid>
+        <commandButton value="login" action="#{loginBean.login}" 
+                         look="primary" />
+      </panel>
     </h:form> 
-  </b:container>
+  </container>
 
   <ui:insert name="nbtop">
     <ui:include src="/footer.xhtml" />
