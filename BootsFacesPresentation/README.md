@@ -1,4 +1,4 @@
 BootsFacesPresentation
 ======================
 
-presenting BootsFaces, the next gen JSF Framework
+presenting both AngularFaces and BootsFaces, the next gen JSF Framework
