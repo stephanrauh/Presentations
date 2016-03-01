@@ -24,6 +24,12 @@ navigationApp.config([ '$routeProvider', function($routeProvider) {
 	}).when('/gridSystem', {
 		templateUrl : '2_layout/gridSystem.jsf',
 		controller : 'EmptyController'
+	}).when('/simplification', {
+		templateUrl : '2_layout/simplification.jsf',
+		controller : 'EmptyController'
+	}).when('/simplification2', {
+		templateUrl : '2_layout/simplification2.jsf',
+		controller : 'EmptyController'
 	}).when('/gridSystemSourcecode', {
 		templateUrl : '2_layout/gridSystemSourcecode.jsf',
 		controller : 'EmptyController'
