@@ -15,6 +15,8 @@ navigationApp.config([ '$routeProvider', function($routeProvider) {
 		controller : 'EmptyController'
 	}).when('/dogFood', {
 		templateUrl : '1_intro/dogFood.jsf',
+	}).when('/behindTheScenes', {
+		templateUrl : '1_intro/behindTheScenes.jsf',
 	}).when('/funFacts', {
 		templateUrl : '1_intro/funFacts.jsf',
 	}).when('/keyFeaturesBF', {
