@@ -51,8 +51,8 @@ navigationApp.config([ '$routeProvider', function($routeProvider) {
 		templateUrl : '4_ajax/ajaxBF.jsf',
 	}).when('/components', {
 		templateUrl : '5_components/components.jsf',
-	}).when('/showcaseBF', {
-		templateUrl : '5_components/showcaseBF.jsf',
+	}).when('/productionReady', {
+		templateUrl : '5_components/productionReady.jsf',
 	}).when('/angularJS', {
 		templateUrl : '10_angularJS/angularJS.jsf',
 	}).when('/ngComponents', {
