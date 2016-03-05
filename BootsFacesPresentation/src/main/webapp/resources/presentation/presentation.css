@@ -177,3 +177,10 @@ aside {
 	right:120px;
 	bottom:160px;
 }
+
+.badge {
+	font-size: 24px !important;
+}
+.label {
+	font-size: 24px !important;
+}
