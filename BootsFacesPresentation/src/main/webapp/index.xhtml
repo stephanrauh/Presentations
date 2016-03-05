@@ -15,24 +15,24 @@
   <script src="controllers.js"></script>
   <script src="navigation.js"></script>
 
-  <b:panel rendered="false" />
-  <b:carousel rendered="false" />
-  <b:tabView rendered="false" />
-  <b:tab rendered="false" />
-
-
-  <container ng-app="navigationApp">
-    <h:form>
-      <panel title="Please log in" look="primary">
-        <panelGrid colSpans="3,3,6">
-          <inputText value="#{loginBean.username}" />
-          <inputSecret value="#{loginBean.password}" />
-        </panelGrid>
-        <commandButton value="login" action="#{loginBean.login}" 
-                         look="primary" />
-      </panel>
-    </h:form> 
-  </container>
+  <h:form>
+    <b:panel rendered="false" />
+    <b:carousel rendered="false" />
+    <b:tabView rendered="false" />
+    <b:tab rendered="false" />
+  
+  
+    <container ng-app="navigationApp">
+        <panel title="Please log in" look="primary">
+          <panelGrid colSpans="3,3,6">
+            <inputText value="#{loginBean.username}" />
+            <inputSecret value="#{loginBean.password}" />
+          </panelGrid>
+          <commandButton value="login" action="#{loginBean.login}" 
+                           look="primary" />
+        </panel>
+    </container>
+  </h:form> 
 
   <ui:insert name="nbtop">
     <ui:include src="/footer.xhtml" />

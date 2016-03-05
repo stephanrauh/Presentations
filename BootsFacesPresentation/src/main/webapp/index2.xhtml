@@ -15,22 +15,24 @@
     <script src="controllers.js"></script>
     <script src="navigation.js"></script>
     
-    <b:panel rendered="false" />
-    <b:carousel rendered="false" />
-    <b:tabView rendered="false" />
-    <b:tab rendered="false" />
-    <b:label text="tt" rendered="false"/>
-    <b:badge text="tt" rendered="false" />
-  
-    <b:container ng-app="navigationApp" rendered="#{loginBean.loggedIn}">
-      <div ng-view="">
-        <ui:include src="2_layout/gridSystem.xhtml" />
-      </div>
-    </b:container>
-  
-    <b:container ng-app="navigationApp" rendered="#{!loginBean.loggedIn}">
-        <h1>Please log in with a valid user name.</h1>
-    </b:container>
+    <h:form>
+      <b:panel rendered="false" />
+      <b:carousel rendered="false" />
+      <b:tabView rendered="false" />
+      <b:tab rendered="false" />
+      <b:label text="tt" rendered="false"/>
+      <b:badge text="tt" rendered="false" />
+    
+      <b:container ng-app="navigationApp" rendered="#{loginBean.loggedIn}">
+        <div ng-view="">
+          <ui:include src="2_layout/gridSystem.xhtml" />
+        </div>
+      </b:container>
+    
+      <b:container ng-app="navigationApp" rendered="#{!loginBean.loggedIn}">
+          <h1>Please log in with a valid user name.</h1>
+      </b:container>
+    </h:form>
   
     <ui:insert name="nbtop">
       <ui:include src="/footer.xhtml" />
