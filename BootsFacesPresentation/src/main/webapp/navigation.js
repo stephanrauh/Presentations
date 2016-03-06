@@ -53,6 +53,8 @@ navigationApp.config([ '$routeProvider', function($routeProvider) {
 		templateUrl : '5_components/components.jsf',
 	}).when('/productionReady', {
 		templateUrl : '5_components/productionReady.jsf',
+	}).when('/productionReadyAF', {
+		templateUrl : '11_angularFaces/productionReady.jsf',
 	}).when('/angularJS', {
 		templateUrl : '10_angularJS/angularJS.jsf',
 	}).when('/ngComponents', {
@@ -61,10 +63,16 @@ navigationApp.config([ '$routeProvider', function($routeProvider) {
 		templateUrl : '10_angularJS/ngTable.jsf',
 	}).when('/ajaxAF', {
 		templateUrl : '11_angularFaces/ajaxAF.jsf',
+	}).when('/htmlLikeCode', {
+		templateUrl : '11_angularFaces/htmlLikeCode.jsf',
 	}).when('/clientSideValidation', {
 		templateUrl : '11_angularFaces/clientSideValidation.jsf',
 	}).when('/i18n', {
 		templateUrl : '11_angularFaces/i18n.jsf',
+	}).when('/i18n2', {
+		templateUrl : '11_angularFaces/i18n2.jsf',
+	}).when('/i18n3', {
+		templateUrl : '11_angularFaces/i18n3.jsf',
 	}).when('/rapidPrototyping', {
 		templateUrl : '11_angularFaces/rapidPrototyping.jsf',
 	}).when('/relaxedMarkup', {
